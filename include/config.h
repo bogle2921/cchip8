@@ -8,5 +8,7 @@
 #define MEMORY_SIZE 4096
 
 #define TOTAL_REGISTERS 16
+#define STACK_DEPTH 16
+#define TOTAL_KEYS 16
 
 #endif
