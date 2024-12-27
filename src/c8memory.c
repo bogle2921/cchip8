@@ -13,3 +13,9 @@ unsigned char get_memory(struct c8_memory* memory, int index){
     memory_in_bounds(index);
     return memory->memory[index];
 }
+
+unsigned short get_memory_short(struct c8_memory* memory, int index){
+    unsigned char byte1 = get_memory(memory, index);
+    unsigned char byte2 = get_memory(memory, index+1);
+    return byte1 << 8 | byte2;
+}

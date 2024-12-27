@@ -8,5 +8,6 @@ struct c8_memory {
 
 void set_memory(struct c8_memory* memory, int index, unsigned char val);
 unsigned char get_memory(struct c8_memory* memory, int index);
+unsigned short get_memory_short(struct c8_memory* memory, int index);
 
 #endif
